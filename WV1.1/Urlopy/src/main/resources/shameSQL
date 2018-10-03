@@ -1,0 +1,9 @@
+create table UsersWacation (id int auto_increment, Imię varchar(50), Nazwisko varchar(50), username varchar(100) not null, password varchar(50) not null, role varchar(15) not null, dniUrlopu INTEGER not null, dniUrlopuTenRok INTEGER not null, dniUrlopuLataWstecz INTEGER not null, primary key(id));
+
+I forgot about the columns
+ALTER TABLE UsersWacation ADD dniUrlopuTenRok integer not null;
+ALTER TABLE UsersWacation ADD dniUrlopuLataWstecz integer not null;
+
+
+Changing the primary key
+ALTER TABLE UsersWacation ADD UNIQUE KEY (username);
