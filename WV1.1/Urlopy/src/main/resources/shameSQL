@@ -7,3 +7,10 @@ ALTER TABLE UsersWacation ADD dniUrlopuLataWstecz integer not null;
 
 Changing the primary key
 ALTER TABLE UsersWacation ADD UNIQUE KEY (username);
+
+PS:
+when adding users I have to specify their roles.
+
+USER for ordinary users
+
+ADMIN for administrators
