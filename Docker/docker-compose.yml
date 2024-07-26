@@ -1,0 +1,28 @@
+version: '2.29.1'
+
+services:
+
+  web:
+    image: tomcat:9.0
+    container_name: tomcat
+    ports:
+      - 8080:8080
+    volumes:
+      - ./WebServer/context.xml:/tmp/context.xml
+      - ./WebServer/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    command: bash -c "mv /usr/local/tomcat/webapps /usr/local/tomcat/webapps2 && mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps && cp /tmp/context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml && catalina.sh run"
+
+  db:
+    image: mariadb:10.3
+    container_name: mqsql1
+    volumes:
+      - container-volume:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: j6w1o08954iWQ!@
+      MYSQL_DATABASE: urlopy
+    ports:
+      - 3306:3306
+
+volumes:
+  container-volume:

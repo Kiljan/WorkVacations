@@ -1,1 +1,0 @@
-create table UsersWacation (id int auto_increment, Imię varchar(50), Nazwisko varchar(50), username varchar(100) not null, password varchar(50) not null, role varchar(15) not null, primary key(id));
