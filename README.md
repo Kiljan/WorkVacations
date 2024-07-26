@@ -60,3 +60,4 @@ $> docker exec -it mqsql1 mysql -uroot -p
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/config/DataConfig.java = database connection
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/config/SecurityConfig.java = available roles for new user (ADMIN or USER)
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/controller/HomeController.java = controller for admin user
+1. Add settings.xml
