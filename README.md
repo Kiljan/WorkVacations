@@ -1,6 +1,11 @@
-[[_TOC_]]
-
 # WorkVacations
+
+- [WorkVacations](#workvacations)
+  - [Build maven project](#build-maven-project)
+  - [Usage](#usage)
+    - [Deploy on Tomcat](#deploy-on-tomcat)
+    - [For additional database management](#for-additional-database-management)
+  - [To do](#to-do)
 
 This is a simple application using Spring Security.
 
