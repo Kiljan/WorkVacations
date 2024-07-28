@@ -2,14 +2,11 @@ package urlopy.app.config;
 
 import java.util.concurrent.TimeUnit;
 
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.CacheControl;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -43,7 +40,7 @@ public class WebConfig implements WebMvcConfigurer {
 	
 	/*for additional resources in spring security 5.0*/
 	 @Override
-	   public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	   public void addResourceHandlers(@SuppressWarnings("null") ResourceHandlerRegistry registry) {
 
 	      // Register resource handler for CSS and JS
 	      registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/statics/")
@@ -56,7 +53,7 @@ public class WebConfig implements WebMvcConfigurer {
 	
 	/*for login page in web security*/
 	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
+	public void addViewControllers(@SuppressWarnings("null") ViewControllerRegistry registry) {
 		registry.addViewController("/login").setViewName("login");
 		}
 	
