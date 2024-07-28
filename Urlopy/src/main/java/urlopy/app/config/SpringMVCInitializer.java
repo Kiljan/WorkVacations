@@ -16,6 +16,7 @@ public class SpringMVCInitializer extends AbstractAnnotationConfigDispatcherServ
 		return new Class<?>[] { WebConfig.class };
 	}
 
+	@SuppressWarnings("null")
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
