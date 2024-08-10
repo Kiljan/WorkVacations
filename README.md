@@ -54,10 +54,17 @@ $> docker exec -it mqsql1 mysql -uroot -p
 
 ## To do
 
-1. Proper documentation :)
-1. English version,
+1. English version for app,
 1. Address the following topics:
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/config/DataConfig.java = database connection
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/config/SecurityConfig.java = available roles for new user (ADMIN or USER)
     1. $HOME/WorkVacations/Urlopy/src/main/java/urlopy/app/controller/HomeController.java = controller for admin user
 1. Add settings.xml
+
+![image](https://github.com/user-attachments/assets/0f9961e2-2b8c-49c6-b8cb-f4e2e1406a84)
+![image](https://github.com/user-attachments/assets/5ff5c324-d7df-4767-8461-fbf20310be6e)
+![image](https://github.com/user-attachments/assets/e4293945-6535-45f3-98bc-c0d67d86e8d7)
+![image](https://github.com/user-attachments/assets/7a5d77c4-6207-46d4-9f7b-90449add4ceb)
+
+
+
