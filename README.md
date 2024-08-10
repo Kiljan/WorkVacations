@@ -7,15 +7,11 @@
     - [For additional database management](#for-additional-database-management)
   - [To do](#to-do)
 
-This is a simple application using Spring Security.
-
-The passwords are retrieved from databases and are hacked using BCrypt.
-
-The site is also protected against Cross Site Request Forgery (CSRF).
-
-An administrator account is added here.
-
-The functions are: adding and removing users from the holiday database, updating work time.
+Functionalities:
+- Spring Security (site is protected against Cross Site Request Forgery (CSRF)),
+- Administrator panel separated from other users (USER or ADMIN roles),
+- Ability to add, remove and modify users by a user with the ADMIN role from the holiday database,
+- Passwords are retrieved from databases and validated using BCrypt.
 
 ## Build maven project
 
@@ -63,7 +59,6 @@ $> docker exec -it mqsql1 mysql -uroot -p
 
 ![image](https://github.com/user-attachments/assets/0f9961e2-2b8c-49c6-b8cb-f4e2e1406a84)
 ![image](https://github.com/user-attachments/assets/5ff5c324-d7df-4767-8461-fbf20310be6e)
-![image](https://github.com/user-attachments/assets/e4293945-6535-45f3-98bc-c0d67d86e8d7)
 ![image](https://github.com/user-attachments/assets/7a5d77c4-6207-46d4-9f7b-90449add4ceb)
 
 
